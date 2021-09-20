@@ -1,0 +1,135 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+::root {
+    --Mobile: 375px;
+    --Desktop: 1440px;
+    --paleBlue: hsl(225, 100%, 94%);
+    --brightBlue: hsl(245, 75%, 52%);
+    --veryPaleBlue: hsl(225, 100%, 98%);
+    --desaturatedBlue: hsl(224, 23%, 55%);
+    --darkBlue: hsl(223, 47%, 23%);
+}
+body {
+    background: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
+   background-image: url(/images/pattern-background-mobile.svg);
+   background-repeat: no-repeat;
+   background-size: contain;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+
+  
+}
+
+.hero-img {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    border-top-left-radius: 0.6rem;
+    border-top-right-radius: 0.6rem;
+    box-shadow: 2px 3px 10px rgba(0,0,0,0.24);
+}
+.sub__container {
+    border-bottom-left-radius: 0.6rem;
+    border-bottom-right-radius: 0.6rem;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: white;
+    box-shadow: 2px 3px 10px rgba(0,0,0,0.24);
+}
+.main__content {
+    text-align: center;
+    padding: 2rem 1.4rem;
+    line-height: 1.5rem;
+    color: gray;
+}
+.header {
+    margin-bottom: 1.1rem;
+    font-size: 1.6rem;
+    color: black;
+    font-weight: 700;
+}
+.pricing {
+    padding: 1.2rem 0.7rem;
+    background:hsl(225, 100%, 98%);
+    border-radius: 0.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    
+}
+.price {
+    display: block;
+    font-weight: 400;
+    color:grey
+}
+.price img, p, a{
+   padding-right: 1.2rem;
+}
+.plan {
+    position: relative;
+    left:-0.5rem;
+    font-weight: bolder;
+}
+.chnge {
+    font-size: 0.9rem;
+}
+.btn {
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+}
+.btn-one {
+    width: 90%;
+    background: hsl(245, 75%, 52%);
+    padding: 0.8rem 0;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.7rem;
+    margin: 1.2rem 0;
+    box-shadow: 0 10px 10px hsl(225, 100%, 90%);
+    transition: 150ms;
+}
+.btn-one:focus {
+    cursor: pointer;
+    transform: scale(0.96);
+}
+.btn-two {
+    border: none;
+    font-weight: bolder;
+    margin-bottom: 1.1rem;
+    background: transparent;
+    color:grey;
+
+}
+.btn-two:hover {
+    cursor: pointer;
+}
+@media screen and (min-width: 375px) and (max-width:1550px) {
+   body {
+     background-image: url(/images/pattern-background-desktop.svg);
+     background-size: contain;
+   }
+   .hero-img {
+       width: 375px;
+   }
+   .sub__container {
+       width: 375px;
+   }
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } 
